@@ -1,5 +1,5 @@
 # import what you use from Tkinter module
-from tkinter import Tk, Frame, Button, ttk
+from tkinter import Tk, Frame, Button
 
 # create top-level, instance of Tk
 # represents the "main" window
@@ -13,9 +13,6 @@ root.minsize(width=400, height=300)
 # alternatively
 root.title('My Awesome App...')
 root['height'] = 300
-
-style = ttk.Style()
-style.theme_use('classic')
 
 # create widgets (Python objects)
 # when instantiating, you must provide reference to parent
