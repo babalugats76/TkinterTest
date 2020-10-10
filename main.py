@@ -20,13 +20,14 @@ root['height'] = 300
 # use widget reference from Interwebs
 # https://tcl.tk/man/tcl8.6/TkCmd/ttk_frame.htm
 
-content = Frame(root, background='blue', borderwidth=5, relief='sunken')
+content = Frame(root, background='blue', borderwidth=5, relief='raised')
 content.pack(fill='both', expand=True, padx=5, pady=5)
 
 # callback function - attach to button below
 
 def btn_handler():
     print('handler fired...')
+    firstBtn['text'] = 'I have been clicked!'
 
 # https://tcl.tk/man/tcl8.6/TkCmd/ttk_button.htm
 
